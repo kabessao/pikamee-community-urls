@@ -58,4 +58,4 @@ xdotool key Enter
 
 
 and this command to run through the list:
-```for item in `cat posts.txt | uniq`; do NAME="$(echo $item | sed 's;/;-;g')"; if ! ls *$NAME* 2> /dev/null; then ./macro.sh $item ; fi  ; done```
+```for item in `cat posts.txt`; do NAME="$(echo $item | sed 's;/;-;g')"; if ! ls *$NAME* 2> /dev/null; then ./macro.sh $item ; fi  ; done```
